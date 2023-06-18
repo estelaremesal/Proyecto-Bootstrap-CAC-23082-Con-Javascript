@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Work+Sans:wght@100;300;400;500;600;700&display=swap');
+
+/*reseteo de valores- reset*/
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: 'Roboto', sans-serif;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 400;
+}
+
+.header{
+    height: 100vh;
+}
+
+.colorFondo{
+    background-color: rgb(69, 69, 69);
+}
+
+.navbar-light .navbar-nav .verde{
+   color: rgb(19, 158, 30);
+}
+
+.carousel-m {
+    position:absolute;
+    top: 8rem;
+    right: 8.5%;
+    left: 45%;
+    padding-top: 1.25rem;
+    padding-bottom: 1.25rem;
+    text-align: right;
+    color:white;
+  }
+
+.carousel-m h1{
+    font-size: 2rem;
+    font-weight: 400;
+}
+
+.carousel-m h5 p {
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.btn1 {
+    height: 32px;
+    padding: 0.20rem;
+}
+
+.btn2 {
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 0.7rem;
+    border-radius: 0.25rem;
+}
+
+.honolulu{
+    height: 60vh;
+}
+
+.izquierda{
+    background-image:url("../assets/img/honolulu.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100%;
+    border:1px solid white;
+}
+
+.derecha{
+    background-color: rgb(57, 57, 57);
+    height: 100%;
+    border:1px solid white;
+}
+
+.ignite {
+    text-decoration: underline;
+    text-decoration-style: dotted;
+}
+
+.area {
+    height: 120px; 
+    font-size:20px;
+}
+
+.bgc-gradient-footer {
+    background: linear-gradient(to right, #082156, #0D368C);
+}
+
+.mensaje {
+    font-size: 1.2rem;
+    padding-top: 2rem;
+    color: #FFFFFF;
+}
+
+.confirm {
+    color: #2986b4; 
+} 
+
+.cancel {
+    color: #e74040; 
+} 
+
+.swal2-popup {
+    font-size: 1rem;
+    }
+
+/*mobile*/
+@media screen and (max-width: 767px)   {
+    .contenedorNav{
+        flex-direction: column;
+        height: initial;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navegacion .listaNav{
+        flex-direction: column;
+    }
+    
+    .carousel-m {
+        position:absolute;
+        top: 5rem;
+        left: 10%;
+    }
+
+    .honolulu{
+       height: initial;
+    }
+
+    .izquierda{
+        height: 45vh;
+    }
+
+    .derecha{
+        height: 45vh;
+    }
+
+}
+
