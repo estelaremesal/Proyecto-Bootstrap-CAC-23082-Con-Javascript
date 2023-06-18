@@ -16,7 +16,7 @@ function calcularTotal() {
           hideClass: {popup: 'animate__animated animate__fadeOutUp'},
          });
          return;
-        } else if (!(/^[a-zA-Z\u00C0-\u017F]+$/.test(nombre.value))) {
+        } else if (!(/^([a-zA-Z]+)(\s[a-zA-Z]+)*$/.test(nombre.value))) {
              Swal.fire({
              html: '<strong class="mensaje">El nombre ingresado no es válido</strong>',
              background: "#e74040",
@@ -39,7 +39,7 @@ function calcularTotal() {
          });
          return;
          
-      } else if (!(/^[a-zA-Z\u00C0-\u017F]+$/.test(apellido.value))) {
+      } else if (!(/^([a-zA-Z]+)(\s[a-zA-Z]+)*$/.test(apellido.value))) {
              Swal.fire({
              html: '<strong class="mensaje">El apellido ingresado no es válido</strong>',
              background: "#e74040",
